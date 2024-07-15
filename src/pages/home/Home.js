@@ -1,9 +1,9 @@
 const Home = () => {
-return(
-    <div className="mt-28">
-        <h2 className="text-xl">Home</h2>
-    </div>
-)
+    return(
+        <div className="mt-28">
+            <h2 className="text-xl">Home</h2>
+        </div>
+    )
 }
 
 export default Home;

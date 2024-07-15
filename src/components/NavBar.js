@@ -21,7 +21,7 @@ const NavBar = () => {
                         <Link to="/">LOGO</Link>
                     </div>
                     <div>
-                        <Link to="/"><PurpleBtn name="Book a Demo" /></Link>
+                        <Link to='/bookADemo'><PurpleBtn name="Book a Demo" /></Link>
                     </div>
                 </div>
                 :
@@ -29,19 +29,19 @@ const NavBar = () => {
                     <div className="flex justify-between items-center">
                         <div className="flex gap-6 py-[6px]">
                             <Link to="/"><FontAwesomeIcon icon={faX} className="text-xl" onClick={handleNavBar}/></Link>
-                            <Link to="/">LOGO</Link>
+                            <Link to="/" onClick={handleNavBar}>LOGO</Link>
                         </div>
                     </div>
                     <div className="flex flex-col justify-center gap-10">
                         <div className="flex flex-col gap-8">
-                            <Link className="text-lg font-semibold">Home</Link>
-                            <Link className="text-lg  font-semibold">Products</Link>
-                            <Link className="text-lg  font-semibold">Pricing</Link>
-                            <Link className="text-lg  font-semibold">About Us</Link>
-                            <Link className="text-lg  font-semibold">Contact Us</Link>
+                            <Link to='/' className="text-lg font-semibold" onClick={handleNavBar}>Home</Link>
+                            <Link to='/products' className="text-lg  font-semibold" onClick={handleNavBar}>Products</Link>
+                            <Link to='/pricing' className="text-lg  font-semibold" onClick={handleNavBar}>Pricing</Link>
+                            <Link to='/aboutUs' className="text-lg  font-semibold" onClick={handleNavBar}>About Us</Link>
+                            <Link to='/contactUs' className="text-lg  font-semibold" onClick={handleNavBar}>Contact Us</Link>
                         </div>
                         <div className="flex justify-center items-center">
-                            <Link className="text-lg  font-semibold"><PurpleBtn name="Book a Demo"/></Link>
+                            <Link to='/bookADemo' className="text-lg  font-semibold" onClick={handleNavBar}><PurpleBtn name="Book a Demo"/></Link>
                         </div>
                     </div>
                 </div>
