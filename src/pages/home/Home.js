@@ -3,7 +3,7 @@ import restaurant_menu from '../../assets/restaurant_menu.jpg'
 const Home = () => {
     return(
         <div className="mt-28 mb-12 px-4">
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6 py-8">
                 <h2 className="title">Innovate Your Menus</h2>
                 <div className="flex flex-col gap-8">
                     <ul className="flex flex-col gap-4 text-md">
